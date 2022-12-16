@@ -1,0 +1,6 @@
+**** SALES RECEIPT ****
+
+A1 | Potato Crisps | 3.05 | 1
+
+
+****TOTAL SALES**** $3.05
