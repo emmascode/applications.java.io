@@ -46,7 +46,20 @@
       <recent name="com.techelevator.ui" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TransactionsTest">
+  <component name="RunManager" selected="Application.VendingMachineCLI">
+    <configuration name="VendingMachineCLI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.techelevator.VendingMachineCLI" />
+      <module name="Vending-machine-Update-Copy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.techelevator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CashRegisterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Vending-machine-TechElevator" />
       <extension name="coverage">
@@ -72,21 +85,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.techelevator.products" />
       <option name="MAIN_CLASS_NAME" value="com.techelevator.products.InventoryTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LogGeneratorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Vending-machine-TechElevator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.techelevator.application.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.techelevator.application" />
-      <option name="MAIN_CLASS_NAME" value="com.techelevator.application.LogGeneratorTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -124,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.VendingMachineCLI" />
         <item itemvalue="JUnit.TransactionsTest" />
         <item itemvalue="JUnit.ProductTest" />
         <item itemvalue="JUnit.InventoryTest" />
         <item itemvalue="JUnit.CashRegisterTest" />
-        <item itemvalue="JUnit.LogGeneratorTest" />
       </list>
     </recent_temporary>
   </component>

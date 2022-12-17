@@ -1,9 +1,0 @@
-**** SALES RECEIPT ****
-
-A3 | Grain Waves | 2.75 | 1
-
-
-A4 | Cloud Popcorn | 3.65 | 1
-
-
-****TOTAL SALES**** $6.40

@@ -8,6 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Vending-machine-Ver1" />
         <module name="Vending-machine-original" />
+        <module name="Vending-machine-More testing" />
+        <module name="Vending-machine-Update-Copy" />
         <module name="Vending-machine-TechElevator" />
         <module name="m1-java-capstone-vending-machine" />
       </profile>

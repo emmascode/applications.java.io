@@ -1,6 +1,0 @@
-**** SALES RECEIPT ****
-
-D4 | Triplemint | 0.75 | 5
-
-
-****TOTAL SALES**** $3.75

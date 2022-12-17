@@ -23,6 +23,14 @@ public class Inventory {
         }
     }
 
+    public List<String> sortByKey() {
+        //sort inventory by key
+        List<String> sortedKeys = new ArrayList<>(this.getProducts().keySet());
+        Collections.sort(sortedKeys);
+        return sortedKeys;
+    }
+
+
     public void loadInventory() {
         products = new HashMap<>();
         File inputFile = new File("data/vendingmachine.csv");

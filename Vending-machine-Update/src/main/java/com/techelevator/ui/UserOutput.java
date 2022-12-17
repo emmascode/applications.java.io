@@ -1,6 +1,8 @@
 package com.techelevator.ui;
 
 import com.techelevator.products.*;
+
+import java.math.BigDecimal;
 import java.util.*;
 
 public class UserOutput {
@@ -32,23 +34,30 @@ public class UserOutput {
         System.out.println(TEXT_YELLOW + "***********************************************" + TEXT_RESET);
         System.out.println(TEXT_YELLOW +"|    Product ID | Name | Price | Quantities    |" + TEXT_RESET);
         System.out.println(TEXT_YELLOW + "***********************************************" + TEXT_RESET);
-        Map<String, Product> treeMap = new TreeMap<String, Product>(inventory.getProducts());
-        for (Map.Entry<String, Product> row : treeMap.entrySet()) {
-            if(row.getValue().getType().equalsIgnoreCase("chip"))
+
+//        Map<String, Product> treeMap = new TreeMap<String, Product>(inventory.getProducts());
+//        for (Map.Entry<String, Product> row : inventory.sortedInventory().entrySet()) {
+        for (String key: inventory.sortByKey()) {
+            Product product = inventory.getProductInfo(key);
+            String type = product.getType();
+            String name = product.getName();
+            BigDecimal price = product.getPrice();
+            int quantity = product.getQuantity();
+            if(type.equalsIgnoreCase("chip"))
             {
-                System.out.println(TEXT_RED + row.getKey() + " | " + row.getValue().getName()  + " | " + row.getValue().getType() + " | $" + row.getValue().getPrice() +  " | " + row.getValue().getQuantity() + "pcs." + TEXT_RESET);
+                System.out.println(TEXT_RED + key + " | " + name  + " | " + type + " | $" + price +  " | " + quantity + "pcs." + TEXT_RESET);
             }
-            else if(row.getValue().getType().equalsIgnoreCase("candy"))
+            else if(type.equalsIgnoreCase("candy"))
             {
-                System.out.println(TEXT_PURPLE + row.getKey() + " | " + row.getValue().getName()  + " | " + row.getValue().getType() + " | $" + row.getValue().getPrice() +  " | " + row.getValue().getQuantity() + "pcs." + TEXT_RESET);
+                System.out.println(TEXT_PURPLE  +  key + " | " + name  + " | " + type + " | $" + price +  " | " + quantity +  "pcs." + TEXT_RESET);
             }
-            else if(row.getValue().getType().equalsIgnoreCase("drink"))
+            else if(type.equalsIgnoreCase("drink"))
             {
-                System.out.println(TEXT_CYAN + row.getKey() + " | " + row.getValue().getName()  + " | " + row.getValue().getType() + " | $" + row.getValue().getPrice() +  " | " + row.getValue().getQuantity() + "pcs." + TEXT_RESET);
+                System.out.println(TEXT_CYAN +  key + " | " + name  + " | " + type + " | $" + price +  " | " + quantity + "pcs." + TEXT_RESET);
             }
-            else if(row.getValue().getType().equalsIgnoreCase("gum"))
+            else if(type.equalsIgnoreCase("gum"))
             {
-                System.out.println(TEXT_GREEN + row.getKey() + " | " + row.getValue().getName()  + " | " + row.getValue().getType() + " | $" + row.getValue().getPrice() +  " | " + row.getValue().getQuantity() + "pcs." + TEXT_RESET);
+                System.out.println(TEXT_GREEN +  key + " | " + name  + " | " + type + " | $" + price +  " | " + quantity + "pcs." + TEXT_RESET);
             }
         }
     }

@@ -1,6 +1,0 @@
-**** SALES RECEIPT ****
-
-A4 | Cloud Popcorn | 3.65 | 1
-
-
-****TOTAL SALES**** $3.65
